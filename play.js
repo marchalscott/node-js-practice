@@ -1,16 +1,14 @@
-let name = 'Marchal';
-let age = 29;
-let hasHobbies = true;
-
-const summerizeUser = (userName, userAge, hasHobby) => {
-    return (
-        'Name is ' +
-        userName +
-        ' age is ' +
-        userAge +
-        ' and the user has hobbies ' +
-        hasHobbies
-    );
+const person = {
+    name: 'Marchal',
+    age: "27",
+    greet() {
+        console.log('Hi, I am ' + this.name);
+    }
 };
 
-console.log(summerizeUser(name, age, hasHobbies));
+const hobbies = ['Sports', 'Cooking'];
+//for (let hobby of hobbies) {
+  //  console.log(hobby);
+//};
+console.log(hobbies.map(hobby => 'Hobby: ' +hobby));
+console.log(hobbies);
